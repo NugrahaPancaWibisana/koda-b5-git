@@ -60,7 +60,7 @@ digunakan untuk melihat isi dari alias remote
 $ git remote get-url <alias_remote>
 ```
 
-## Synchornization
+## Synchronization
 
 digunakan untuk sinkronisasi dari lokal ke remote
 
