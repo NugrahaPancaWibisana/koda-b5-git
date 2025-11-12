@@ -73,3 +73,13 @@ digunakan untuk sinkronisasi dari remote ke lokal
 ```bash
 $ git pull <target_remote> <branch_remote>
 ```
+
+## Copy Remote Repository to Local Computer
+
+Digunakan untuk meng-kloning remote repo
+
+```bash
+$ git clone <link_remote> [<custom_name>]
+```
+
+Ketika di clone, link_remote langsung di set menjadi remote origin
