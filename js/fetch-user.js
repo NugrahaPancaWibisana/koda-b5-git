@@ -1,14 +1,12 @@
 export async function fetchUser() {
   try {
-    const url = 'https://jsonplaceholder.typicode.com/users';
-
-    const res = await fetch(url);
-
-    if (!res.ok) {
-      throw new Error(res.status);
+    const url = "https://jsonplaceholder.typicode.com/users";
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`${response.status} ${response.statusText}`);
     }
-
-    console.log(res.json());
+    const result = await response.json();
+    console.log(result[1]);
   } catch (error) {
     console.log(error);
   }
