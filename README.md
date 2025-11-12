@@ -40,6 +40,12 @@ bisa digunakan untuk melihat riwayat commit
 $ git log
 ```
 
+
+Bisa digunakan untuk melihat riwayat/history commit versi private
+```bash
+$ git reflog
+```
+
 ## Manajemen Git Remote
 
 digunakan untuk menghubungkan antara git yang di komputer lokal dengan git yang ada di penyedia layanan git (github, gitlab, dll..)
@@ -83,3 +89,17 @@ $ git clone <link_remote> [<custom_name>]
 ```
 
 Ketika di clone, link_remote langsung di set menjadi remote origin
+
+## Undoing Changes
+
+Konsep membalikkan waktu ke <span style="background-color: yellow;color:black">***id_commit***</span> tertentu untuk merubah history/riwayat git. <span style="background-color: yellow;color:black">***id_commit***</span> menjadi ***HEAD*** yang terbaru
+
+```bash
+$ git reset <id_commit>
+```
+
+Konsep yang menghilangkan history dengan <span style="background-color: yellow;color:black">***id_commit***</span> tertentu dengan history baru
+
+```bash
+$ git revert <id_commit>
+```
